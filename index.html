@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <script src="script.js"></script>
+    <section class="home home">
+        <header>
+            <nav>
+                <div class="left"><b><i>Syed Junaid Portfolio</i></b></div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="first" id="home">
+                <div class="leftSection">Hi! My name is<br> <span class="name">Syed Junaid</span>
+                    <div>and I am a passionate</div>
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                </div>
+                <div class="rigthSection">
+                    <img src="Dev.gif" width=460px>
+                </div>
+            </section>
+            <hr>
+            <section class="skills" id="skills">
+                <div class="skill"><b>My Skills</b></div>
+                <div style="color:rgb(122, 196, 189);font-size: 1.7rem;"><b><u>Technical Skills:</u></b></div>
+                <div class="mainskills">
+                    <div class="leftskill">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>PowerBI</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <div class="about_us">About Us</div>
+            <section class="about" id=about">
+
+                <section class="aleft">
+                    <p>I am an aspiring Full Stack Developer with a strong passion for coding and problem-solving.<br>
+                        Currently, I am focused on mastering backend and frontend technologies to build scalable<br>
+                        and efficient web applications.My journey in technology began with a deep curiosity for<br>
+                        software development, leading me to explore various programming languages, frameworks, and
+                        databases.<br>
+                        I enjoy working on real-world projects that enhance my skills and help me understand system
+                        architecture,<br>
+                        API design, and database management.Eager to learn and grow, I am always looking for
+                        opportunities
+                        to<br>
+                        collaborate and contribute to innovative solutions in the tech industry.
+                    </p>
+                </section>
+                <section class="aright">
+                    <img src="Full.png" width="330px">
+                </section>
+            </section>
+            <hr>
+            <section class="contact" id="contact">
+                <div class="contact_us">Contact Us</div>
+                <form class="forms">
+                    Name:<input type="text" placeholder="Enter your name"><br>
+                    Email:<input type="text" placeholder="Enter your email"><br>
+                    Phone Number:<input type="text" placeholder="Enter your number"><br>
+                    Job Details:<input type="textarea" placeholder="Describe your Job here"><br>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </section>
+
+        </main>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['<i>Web<i/> Developer.', '<i>Content Writer</i>', '<i>Web</i> Designer.'],
+                typeSpeed: 50,
+            });
+        </script>
+
+</body>
+
+</html>
