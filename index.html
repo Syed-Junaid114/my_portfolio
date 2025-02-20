@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body">
+<body>
     <script src="script.js"></script>
-    <section class="home home">
+    <section class="home" id="#home">
         <header>
             <nav>
                 <div class="left"><b><i>Syed Junaid Portfolio</i></b></div>
@@ -26,11 +27,13 @@
             </nav>
         </header>
         <main>
-            <section class="first" id="home">
+            <section class="first">
                 <div class="leftSection">Hi! My name is<br> <span class="name">Syed Junaid</span>
                     <div>and I am a passionate</div>
                     <!-- Element to contain animated typing -->
-                    <span id="element"></span>
+                    <span id="element"></span><br>
+                    <button>Download Resume</button>
+                    <button>Visit Github</button>
                 </div>
                 <div class="rigthSection">
                     <img src="Dev.gif" width=460px>
@@ -42,34 +45,36 @@
                 <div style="color:rgb(122, 196, 189);font-size: 1.7rem;"><b><u>Technical Skills:</u></b></div>
                 <div class="mainskills">
                     <div class="leftskill">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
+                        <ul style="font-size: 1.6rem;">
                             <li>C</li>
                             <li>Python</li>
                             <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>Php</li>
+                            <li>SQL</li>
                             <li>PowerBI</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <hr>
-            <div class="about_us">About Us</div>
-            <section class="about" id=about">
-
+            <div class="about_us" id="about">About Us</div>
+            <section class="about">
                 <section class="aleft">
-                    <p>I am an aspiring Full Stack Developer with a strong passion for coding and problem-solving.<br>
-                        Currently, I am focused on mastering backend and frontend technologies to build scalable<br>
-                        and efficient web applications.My journey in technology began with a deep curiosity for<br>
-                        software development, leading me to explore various programming languages, frameworks, and
-                        databases.<br>
-                        I enjoy working on real-world projects that enhance my skills and help me understand system
-                        architecture,<br>
-                        API design, and database management.Eager to learn and grow, I am always looking for
-                        opportunities
-                        to<br>
-                        collaborate and contribute to innovative solutions in the tech industry.
+                    <p><i>I am an aspiring Full Stack Developer with a strong passion for coding and
+                            problem-solving.<br>
+                            Currently, I am focused on mastering backend and frontend technologies to build scalable<br>
+                            and efficient web applications.My journey in technology began with a deep curiosity for<br>
+                            software development, leading me to explore various programming languages, frameworks, and
+                            databases.<br>
+                            I enjoy working on real-world projects that enhance my skills and help me understand system
+                            architecture,<br>
+                            API design, and database management.Eager to learn and grow, I am always looking for
+                            opportunities
+                            to<br>
+                            collaborate and contribute to innovative solutions in the tech industry.</i>
                     </p>
                 </section>
                 <section class="aright">
@@ -80,10 +85,10 @@
             <section class="contact" id="contact">
                 <div class="contact_us">Contact Us</div>
                 <form class="forms">
-                    Name:<input type="text" placeholder="Enter your name"><br>
-                    Email:<input type="text" placeholder="Enter your email"><br>
-                    Phone Number:<input type="text" placeholder="Enter your number"><br>
-                    Job Details:<input type="textarea" placeholder="Describe your Job here"><br>
+                    <input type="text" placeholder="Enter your name"><br>
+                    <input type="text" placeholder="Enter your email"><br>
+                    <input type="text" placeholder="Enter your number"><br>
+                    <input type="textarea" style="height:200px;"><br>
                     <button type="submit" id="submit">Submit</button>
                 </form>
             </section>
@@ -93,10 +98,20 @@
         <!-- Setup and start animation! -->
         <script>
             var typed = new Typed('#element', {
-                strings: ['<i>Web<i/> Developer.', '<i>Content Writer</i>', '<i>Web</i> Designer.'],
+                strings: ['<i>Full Stack<i/> Developer,', '<i>Content Writer,</i>', '<i>Web</i> Designer.'],
                 typeSpeed: 50,
             });
         </script>
+        <footer>
+
+            <img src="i.png">
+            <img src="f.png">
+            <img src="li.png">
+            <img src="g.png" style="height:32px;">
+
+            <p> Copyright &copy;Syed.All Rights Reserved.</p>
+        </footer>
+
 
 </body>
 
