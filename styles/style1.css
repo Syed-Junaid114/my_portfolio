@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
   body {
     background-color: azure;
-    color: antiquewhite;
+
   }
 
   .first {
@@ -39,6 +39,11 @@
     font-size: 1.3rem;
     padding: 10px;
   }
+  .skillshead{
+    text-decoration: underline;
+    font-size:1.5rem; 
+    color: rgb(0, 0, 0);
+}
 }
 
 /* For devices with a maximum width of 480px (mobile phones) */
@@ -66,4 +71,5 @@
     font-size: 1.2rem;
     padding: 8px;
   }
+
 }

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -19,14 +19,15 @@
                 <div class="right">
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
+            <div class="heads"><b>Home</b></div>
             <section class="first">
                 <div class="leftSection">Hi! My name is<br> <span class="name">Syed Junaid</span>
                     <div>and I am a passionate</div>
@@ -36,31 +37,58 @@
                     <button>Visit Github</button>
                 </div>
                 <div class="rigthSection">
-                    <img src="Dev.gif" width=460px>
+                    <img src="./images/Dev.gif" class="mainimg" width=460px>
                 </div>
             </section>
             <hr>
             <section class="skills" id="skills">
-                <div class="skill"><b>My Skills</b></div>
-                <div style="color:rgb(122, 196, 189);font-size: 1.7rem;"><b><u>Technical Skills:</u></b></div>
+                <div class="heads"><b>My Skills</b></div>
+                <div style="color:rgb(92, 150, 144);font-size: 1.7rem;"><b><u>Technical Skills:</u></b></div>
                 <div class="mainskills">
-                    <div class="leftskill">
-                        <ul style="font-size: 1.6rem;">
-                            <li>C</li>
-                            <li>Python</li>
-                            <li>Java</li>
+                    <div>
+                        <h1 class="skillshead">FrontEnd:</h1>
+                        <ul>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JS</li>
-                            <li>Php</li>
-                            <li>SQL</li>
+                            <li>JavaSCript</li>
+                            <li>React.js</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="skillshead">BackEnd:</h1>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Python</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="skillshead">DataBases:</h1>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="skillshead">Analytics:</h1>
+                        <ul>
+                            <li>MS-Excel</li>
                             <li>PowerBI</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="skillshead">Other SKills:</h1>
+                        <ul>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>Php</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <hr>
-            <div class="about_us" id="about">About Us</div>
+            <div class="heads" id="about">About Me</div>
             <section class="about">
                 <section class="aleft">
                     <p><i>I am an aspiring Full Stack Developer with a strong passion for coding and
@@ -78,12 +106,12 @@
                     </p>
                 </section>
                 <section class="aright">
-                    <img src="Full.png" width="330px">
+                    <img src="./images/Full.png" class="sklimg" width="330px">
                 </section>
             </section>
             <hr>
             <section class="contact" id="contact">
-                <div class="contact_us">Contact Us</div>
+                <div class="heads">Contact Us</div>
                 <form class="forms">
                     <input type="text" placeholder="Enter your name"><br>
                     <input type="text" placeholder="Enter your email"><br>
@@ -104,10 +132,10 @@
         </script>
         <footer>
 
-            <img src="i.png">
-            <img src="f.png">
-            <img src="li.png">
-            <img src="g.png" style="height:32px;">
+            <img src="./images/i.png">
+            <img src="./images/f.png">
+            <img src="./images/li.png">
+            <img src="./images/g.png" style="height:32px;">
 
             <p> Copyright &copy;Syed.All Rights Reserved.</p>
         </footer>

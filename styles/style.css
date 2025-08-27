@@ -7,8 +7,8 @@
 body {
     background-color: rgb(19, 19, 22);
     color: whitesmoke;
-
 }
+
 
 nav {
     display: flex;
@@ -25,6 +25,7 @@ nav ul {
 
 nav ul li {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 20px;
     /* text-shadow:2px 3px grey; */
 }
@@ -48,7 +49,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 110px 0;
+    margin: 0;
 }
 
 .about {
@@ -108,8 +109,10 @@ main hr {
 
 .mainskills {
     margin: 5px 0;
-    justify-content: left;
+    justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
+    
 
 }
 
@@ -119,9 +122,7 @@ section {
     justify-content: center;
 }
 
-.skill,
-.about_us,
-.contact_us {
+.heads {
     justify-content: center;
     display: grid;
     color: rgb(14, 141, 141);
@@ -176,8 +177,24 @@ section {
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: azure;
-        color: rgb(11, 85, 73);
+        background-color: rgb(176, 233, 233);
+        color: rgb(14, 107, 92);
+        overflow:auto
+    }   
+    .mainimg{
+        width:100%
+    }
+    .sklimg{
+        width:10rem;
+    }
+    .skillshead{
+        color: rgb(76 133 133);
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+    .aleft,.aright{
+        width:30%
     }
 }
 
@@ -202,4 +219,17 @@ footer img {
     padding: 5px;
     border-radius: 3vw;
     cursor: pointer;
+}
+
+ul{
+    /* margin:0;
+    padding: 0; */
+    font-size: 1.28rem;
+    list-style:disc;
+
+}
+
+.skillshead{
+    text-decoration: underline;
+    font-size:1.5rem; 
 }
